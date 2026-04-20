@@ -1,13 +1,76 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Basic metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- SEO metadata (write your own description per page) -->
+    <meta
+      name="description"
+      content="Jaguar Clothing is a luxury streetwear brand delivering limited drops, premium essentials, and statement pieces."
+    />
+
+    <title>Home | Jaguar Clothing</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Scripts (Part 1: file exists; functionality comes later) -->
+    <script src="js/main.js" defer></script>
   </head>
+
   <body>
-    <h1>Blockchain Dlai</h1>
-    <p>Some information about me</p>
-    <img src="img/img.jpg" alt="Image of a rotweiller" />
+    <!-- Accessibility: skip link -->
+    <a href="#main-content">Skip to main content</a>
+
+    <!-- Site header and global navigation -->
+    <header>
+      <div>
+        <!-- Replace with logo image later if you have one -->
+        <a href="index.html">Jaguar Clothing</a>
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <ul>
+          <!-- aria-current helps indicate the active page -->
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero / intro section -->
+      <section>
+        <h1>Luxury Streetwear. Limited Drops.</h1>
+        <p>
+          Jaguar Clothing is a premium streetwear label focused on clean
+          silhouettes, quality fabrics, and limited releases designed to stand
+          out.
+        </p>
+
+        <p>
+          <a href="products.html">Browse the Drop</a>
+        </p>
+      </section>
+
+      <!-- Featured section -->
+      <section>
+        <h2>Featured Pieces</h2>
+        <ul>
+          <li>Signature Oversized Tee (Coming Soon)</li>
+          <li>Heavyweight Hoodie (Coming Soon)</li>
+          <li>Cap / Accessories (Coming Soon)</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Jaguar Clothing. All rights reserved.</p>
+    </footer>
   </body>
 </html>
