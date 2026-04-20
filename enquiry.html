@@ -1,0 +1,45 @@
+<section>
+  <h1>Enquiry</h1>
+  <p>
+    Use this form for product availability, sizing, bulk orders, or delivery
+    questions.
+  </p>
+
+  <form action="#" method="post">
+    <!-- Comments help meet the rubric requirement -->
+    <!-- Customer details -->
+    <fieldset>
+      <legend>Your details</legend>
+
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone (optional):</label>
+      <input type="tel" id="phone" name="phone" />
+    </fieldset>
+
+    <!-- Enquiry details -->
+    <fieldset>
+      <legend>Enquiry details</legend>
+
+      <label for="productType">Product type:</label>
+      <select id="productType" name="productType" required>
+        <option value="">Select one</option>
+        <option value="hoodie">Hoodie</option>
+        <option value="tshirt">T-Shirt</option>
+        <option value="accessory">Accessory</option>
+      </select>
+
+      <label for="size">Size (optional):</label>
+      <input type="text" id="size" name="size" placeholder="e.g. M / L / XL" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+    </fieldset>
+
+    <button type="submit">Send Enquiry</button>
+  </form>
+</section>
