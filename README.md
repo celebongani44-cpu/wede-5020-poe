@@ -1,9 +1,11 @@
 # Project Title
-Your project's title
+
+jaguar.Clothing Brand
 
 ## Student Information
-**Student number:** Your student number <br>
-**Student Name:** Your full name
+
+**Student number:** ST10483904 <br>
+**Student Name:** Bongani Thukwane
 
 ## Project Overview
 
