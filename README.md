@@ -58,3 +58,22 @@ Google. (2025). Google Maps Embed. Available at: https://www.google.com/maps (Ac
 Google Fonts. (2025). Google Fonts Library. Available at: https://fonts.google.com/ (Accessed: [Date]).
 Unsplash. (2025). Free High-Resolution Images. Available at: https://unsplash.com/ (Accessed: [Date]).
 Pexels. (2025). Free Stock Photos. Available at: https://www.pexels.com/ (Accessed: [4/20/2026]).
+
+## Part 2 – CSS Styling & Responsive Design
+
+Implemented:
+
+- External stylesheet
+- Desktop-first layout
+- Flexbox navigation
+- CSS Grid product layout
+- Responsive breakpoints (992px, 768px)
+- Styled enquiry form
+- Hover and focus effects
+- Mobile optimisation
+
+Tested on:
+
+- Chrome Desktop
+- Tablet view (iPad simulation)
+- Mobile view (iPhone simulation)

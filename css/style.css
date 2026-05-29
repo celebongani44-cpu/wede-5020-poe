@@ -1,0 +1,218 @@
+/* ===================================
+   JAGUAR CLOTHING
+   Part 2 – Base Styling
+   Student: Bongani Thukwane
+   =================================== */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Colors */
+:root {
+  --black: #000000;
+  --charcoal: #111111;
+  --gold: #c6a75e;
+  --white: #ffffff;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  margin-bottom: 15px;
+}
+
+/* Section spacing */
+.section {
+  padding: 60px 10%;
+}
+/* ======================
+   HEADER & NAVIGATION
+====================== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  border-bottom: 1px solid var(--gold);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--gold);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+/* ======================
+   HERO SECTION
+====================== */
+
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: var(--gold);
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--gold);
+  color: var(--black);
+}
+/* ======================
+   SHOP PAGE - PRODUCT GRID
+====================== */
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.product-card {
+  background-color: var(--charcoal);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #222;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+/* ======================
+   RESPONSIVE DESIGN
+====================== */
+
+/* Tablet View (Screens smaller than 992px) */
+@media (max-width: 992px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 3 */
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
+
+/* Mobile View (Screens smaller than 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .products {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 40px 5%; /* Less padding on mobile */
+  }
+}
+/* ======================
+   FORM STYLING
+====================== */
+
+form {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: var(--charcoal);
+  border: 1px solid #333;
+  color: var(--white);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+}
