@@ -216,3 +216,21 @@ select:focus {
   margin-bottom: 10px;
   display: block;
 }
+/* ======================
+   SEARCH BAR
+====================== */
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  margin: 20px 0 30px;
+  background-color: var(--charcoal);
+  border: 1px solid #333;
+  color: var(--white);
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: var(--gold);
+}
